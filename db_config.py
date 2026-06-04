@@ -2,15 +2,15 @@ import mysql.connector
 
 def get_database_connection():
     connection = mysql.connector.connect(
-        host='gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
-        user='LBHdQuEK4ZhZoAq.root',
-        password='rU05KPedb2BNslDC',
-        database='student_tasks_manager',
-        port=4000,
-        ssl_disabled=False
+        host = 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
+        user = 'LBHdQuEK4ZhZoAq.root',
+        password = 'rU05KPedb2BNslDC',
+        database = 'student_tasks_manager',
+        port = 4000
     )
-
+    
     return connection
+
 
 
 
